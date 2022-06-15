@@ -1,6 +1,6 @@
-
-<div fxLayout="row">
-  <mat-card fxLayout="row" fxFlex="80%" class="center space-top">
+<div class="container" >
+<div fxLayout="row" >
+  <mat-card fxLayout="row"  >
 
 <div class="card-wrapper">
 
@@ -13,11 +13,11 @@
       <mat-card-subtitle>
         {{article.real}}
       </mat-card-subtitle>
-    </mat-card-header>
+    </mat-card-header >
     <!-- si l'image existe ;;;j'affiche et -->
-    <img mat-card-image style="width: 150px;" [src]="article.img " [alt]="article.nom" *ngIf="article.img">
+    <img mat-card-image style="width: 80%; " [src]="article.img " [alt]="article.nom" *ngIf="article.img">
 <!--  si elle n'existe pas me donne une image par default -->
-    <img mat-card-image style="width: 150px;"  *ngIf="!article.img" src="https://palam.ca/wp-content/uploads/2018/11/D%C3%A9couvrez-trois-sites-d%E2%80%99images-gratuites-libre-de-droit-pour-votre-cr%C3%A9ativit%C3%A9e.jpg">
+    <img mat-card-image style="width: 80%;"  *ngIf="!article.img" src="https://palam.ca/wp-content/uploads/2018/11/D%C3%A9couvrez-trois-sites-d%E2%80%99images-gratuites-libre-de-droit-pour-votre-cr%C3%A9ativit%C3%A9e.jpg">
     <mat-card-content>
       <p>
         {{article.synopsis}}
@@ -32,4 +32,5 @@
 
 </div>
 </mat-card>
+</div>
 </div>

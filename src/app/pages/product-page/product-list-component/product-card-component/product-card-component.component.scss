@@ -1,7 +1,14 @@
-.center {
-  margin-left: auto;
-  margin-right: auto;
+.container{
+  display : flex;
+  background-color: red;
+
 }
+
+
+// .center {
+// justify-content: center ;
+
+// }
 
 .space-top {
   margin-top: 3%;
