@@ -1,7 +1,11 @@
-<p>product-page works!</p>
+<h4>La Liste des films</h4>
+<app-product-list-component
+  [articles]="films"
+  class="container"
+></app-product-list-component>
 
-
-
-
-<app-product-list-component [articles]="films" ></app-product-list-component>
-<app-product-list-component [articles]="albums" ></app-product-list-component>
+<h4>La Liste des albums</h4>
+<app-product-list-component
+  [articles]="albums"
+  class="container"
+></app-product-list-component>

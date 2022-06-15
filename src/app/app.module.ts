@@ -14,6 +14,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { ProductListComponentComponent } from './pages/product-page/product-list-component/product-list-component.component';
 import { ProductCardComponentComponent } from './pages/product-page/product-list-component/product-card-component/product-card-component.component';
+import { DetailsPageComponent } from './pages/details-page/details-page.component';
+import { ProductDetailComponent } from './pages/details-page/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ProductCardComponentComponent } from './pages/product-page/product-list
     ProductPageComponent,
     ProductListComponentComponent,
     ProductCardComponentComponent,
+    DetailsPageComponent,
+    ProductDetailComponent,
 
   ],
   imports: [

@@ -1,15 +1,43 @@
+
 .container{
-  display : flex;
-  background-color: red;
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  width: 315px;
+  margin: 2em;
+  border-radius: 10px;
+  display: inline-block;
 
 }
 
 
-// .center {
-// justify-content: center ;
-
-// }
-
 .space-top {
   margin-top: 3%;
+
+}
+
+.card-view {
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 315px;
+  margin: 2em;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.card-header {
+  padding: 0;
+  margin: 0;
+  height: 367px;
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mat-card-image{
+  margin: 0px 0px;
+height: 300px;
+width:300px;
 }
