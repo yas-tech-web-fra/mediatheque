@@ -58,7 +58,11 @@ export class ProductPageComponent implements OnInit {
     },
   ];
 
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.films.values;
+    this.albums.values;
+  }
 }
