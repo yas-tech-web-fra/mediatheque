@@ -1,6 +1,7 @@
-import Product from"./product.model";
+import ProductModel from "./Product.model";
 
-export default interface Album extends Product {
+
+export default interface Album extends ProductModel {
+
   artiste: string;
- 
 }

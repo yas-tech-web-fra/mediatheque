@@ -1,6 +1,7 @@
-import Product from"./product.model";
+import ProductModel from "./Product.model";
 
-export default interface Film extends Product {
+
+export default interface Film extends ProductModel {
   real: string;
   synopsis: string;
 }

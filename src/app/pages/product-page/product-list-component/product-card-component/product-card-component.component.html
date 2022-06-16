@@ -4,23 +4,26 @@
       <div class="card-wrapper">
         <mat-card class="example-card">
           <mat-card-header>
-            <!-- <img
-        src={{"https://www.freakyjolly.com/wp-content/uploads/2021/07/cropped-cropped-fj-logo-192-removebg-preview-e1625997712615-1.png}}"
-        mat-card-avatar /> -->
+        
             <mat-card-title>{{ article.nom | slice: 0:18 }}</mat-card-title>
             <!-- si le nom est tronque on ajoute ... -->
             <span *ngIf="article.nom.lenght > 18">...</span>
             <mat-card-subtitle>
               {{ article.real }}
             </mat-card-subtitle>
+            <mat-card-subtitle>
+              {{ article.artiste }}
+            </mat-card-subtitle>
           </mat-card-header>
+
           <!-- si l'image existe ;;;j'affiche et -->
           <img
             mat-card-image
             style="width: 90%"
+             *ngIf="article.img"
             [src]="article.img"
             [alt]="article.nom"
-            *ngIf="article.img"
+
           />
           <!--  si elle n'existe pas me donne une image par default -->
           <img
@@ -32,11 +35,26 @@
           <mat-card-content>
             <p>{{ article.synopsis | slice: 0:125 }}...</p>
             <span *ngIf="article.synopsis.lenght > 140">...</span>
-          </mat-card-content>
 
+          </mat-card-content>
           <mat-card-actions>
-            <button mat-raised-button color="accent">DETAILS</button>
+            <!-- On génère le boutton, qui pour le moment ne renvoit nul part -->
+            <button
+              mat-button
+              *ngIf="article.synopsis"
+              routerLink="/products/films/{{ article.id }}"
+            >
+              Details
+            </button>
+            <button
+              mat-button
+              *ngIf="article.artiste"
+              routerLink="/products/albums/{{ article.id }}"
+            >
+              Details
+            </button>
           </mat-card-actions>
+
         </mat-card>
       </div>
     </mat-card>
